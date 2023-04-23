@@ -1,7 +1,8 @@
 # Edge-Computing-CP02
 
-<h3>Check Point 02: Edge Computing and Computer Systems</h3>
+<h3>Check Point 02: Medição de temperatura e umidade de um ambiente com indicação de níveis críticos</h3>
 
+<p>Neste projeto temos a implementação de um display que mostram valores de temperatura e umidade de um ambiente, junto a sinalização de alerta quando estes níveis estiverem críticos<p>
 
 <h4>Integrantes:</h4> 
 
