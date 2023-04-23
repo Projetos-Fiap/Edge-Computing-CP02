@@ -22,7 +22,7 @@
 
 <h4>Simulação do Protótipo (Tinkercad):</h4>
 
-https://www.tinkercad.com/things/22c5XM1pNs4-copy-of-dht11-tinkercad-better-version/editel?tenant=circuits
+https://www.tinkercad.com/things/1vXcAVCbZBl?sharecode=caKTJyt3ogsLfUcALX4isB_AXl_5_HU-LPwECA3DLA0
 <br>
 <br><b>Materiais utilizados:</b>
 <li>1 Arduino Uno R3</li>
