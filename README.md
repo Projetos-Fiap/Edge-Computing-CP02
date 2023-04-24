@@ -35,4 +35,4 @@ Devido ao fato de o Tinkercad (site onde construímos o protótipo) não possuir
 O código para o programa é escrito em C++ e se encontra no arquivo "arduino.c". Utilize o software Arduino IDE para carregar este código para a placa.
 
 ### Imagem do circuito
-![Imagem](https://github.com/Projetos-Fiap/Edge-Computing-CP02/blob/main/circuit_cp02_2.png?raw=true)
+![Imagem](https://github.com/Projetos-Fiap/Edge-Computing-CP02/blob/main/circuit_cp02.png?raw=true)
