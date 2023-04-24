@@ -181,13 +181,15 @@ void loop() {
       
       
       if(order == 0) {  
+        // Gets average light level
+        float averageLight = (luminosityMeasurements[1] + luminosityMeasurements[2] + luminosityMeasurements[3] + luminosityMeasurements[4] + luminosityMeasurements[5])/5;
         // Prints light level to LCD
-        if (ldrValue <= LDR_OK_LEVEL) {
+        if (averageLight <= LDR_OK_LEVEL) {
           lcd.clear(); 
           lcd.setCursor(0,0);
           lcd.print("Light level: OK");
         }
-        else if (ldrValue <= LDR_ALERT_LEVEL) {
+        else if (averageLight <= LDR_ALERT_LEVEL) {
           lcd.clear(); 
           lcd.setCursor(0,0);
           lcd.print("Light level:");
@@ -204,13 +206,16 @@ void loop() {
       }
 
       if(order == 1){
+        // Gets average temperature level
+        float tempAverage = (tempMeasurements[1] + tempMeasurements[2] + tempMeasurements[3] + tempMeasurements[4] + tempMeasurements[5])/5;
+        
         // Prints temperature to LCD
-        if (temperatureC >= TEMP_OK_MIN_LEVEL && temperatureC <= TEMP_OK_MAX_LEVEL) {
+        if (TEMP_OK_MIN_LEVEL <= tempAverage && tempAverage <= TEMP_OK_MAX_LEVEL) {
           lcd.clear(); 
           lcd.setCursor(0,0);
           lcd.print("Temperature:");
           lcd.setCursor(0,1);
-          lcd.print(temperatureC, 1);
+          lcd.print(tempAverage, 1);
           lcd.print("C  OK");
         }
         else {
@@ -218,9 +223,9 @@ void loop() {
           lcd.setCursor(0,0);
           lcd.print("Temperature:");
           lcd.setCursor(0,1);
-          lcd.print(temperatureC, 1);
+          lcd.print(tempAverage, 1);
           lcd.print("C  ");
-          if (temperatureC < TEMP_OK_MIN_LEVEL) {
+          if (tempAverage < TEMP_OK_MIN_LEVEL) {
             lcd.print("TOO LOW");
           }
           else {
@@ -230,13 +235,16 @@ void loop() {
       }
 
       if(order == 2) {
+        // Gets Average humidity percentage
+        float humidityAverage = (humidityMeasurements[1] + humidityMeasurements[2] + humidityMeasurements[3] + humidityMeasurements[4] + humidityMeasurements[5])/5;
+        
       	// Prints humidity to LCD
-        if (humidityPercentage >= HUM_OK_MIN_LEVEL && humidityPercentage <= HUM_OK_MAX_LEVEL) {
+        if (HUM_OK_MIN_LEVEL <= humidityAverage && humidityAverage <= HUM_OK_MAX_LEVEL) {
           lcd.clear(); 
           lcd.setCursor(0,0);
           lcd.print("Humidity:");
           lcd.setCursor(0,1);
-          lcd.print(humidityPercentage, 1);
+          lcd.print(humidityAverage, 1);
           lcd.print("%  OK");
         }
         else {
@@ -244,9 +252,9 @@ void loop() {
           lcd.setCursor(0,0);
           lcd.print("Humidity:");
           lcd.setCursor(0,1);
-          lcd.print(humidityPercentage, 1);
+          lcd.print(humidityAverage, 1);
           lcd.print("%  ");
-          if (humidityPercentage < HUM_OK_MIN_LEVEL) {
+          if (humidityAverage < HUM_OK_MIN_LEVEL) {
             lcd.print("TOO LOW");
           }
           else {
