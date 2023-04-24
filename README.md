@@ -23,7 +23,7 @@ Devido ao fato de o Tinkercad (site onde construímos o protótipo) não possuir
 <li>Arduino Uno R3</li>
 <li>LCD 16x2</li>
 <li>Sensor LDR (para luminosidade)</li>
-<li>Sensor DHT11 (para temperatura e umidade) (</li>
+<li>Sensor DHT11 (para temperatura e umidade)</li>
 <li>Protoboard</li>
 <li>LEDs</li>
 <li>Potênciometros</li>
