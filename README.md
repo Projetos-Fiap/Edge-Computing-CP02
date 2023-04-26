@@ -31,12 +31,11 @@ Devido ao fato de o Tinkercad (site onde construímos o protótipo) não possuir
 <li>Buzzer</li>
 <li>Cabos Jumper</li>
 
-### Código
-O código para o programa é escrito em C++ e se encontra no arquivo "arduino.c". Utilize o software Arduino IDE para carregar este código para a placa.
+### Código Tinkercad
+O código para o programa é escrito em C e se encontra no arquivo "arduino.c". Utilize o software Arduino IDE para carregar este código para a placa.
 
-### Código utilizando no CP
-O código utilizado na monstagem em sala do arduino se encontra no arquivo "arduinoHandsOn.c". Neste código utilizamos um DHT11 ao invés do sensor de temperatura e potenciometro usados na simulação do tinkercad.
-
+### Código Montagem Hands-on
+O código utilizado na montagem em sala, com hardware real, se encontra no arquivo "arduinoHandsOn.c". Aqui fizemos algumas substituições de valores para podermos demonstrar o funcionamento do mesmo, (dada Temperatura e Umidade fixos) e também trabalhamos com o sensor DHT11 que já lê nativamente temperatura e umidade (desde que haja importação de sua biblioteca), não necessitando fazer a conversão desses valores como ocorreu na simulação.
 
 ### Imagem do circuito
 ![Imagem](https://github.com/Projetos-Fiap/Edge-Computing-CP02/blob/main/circuit_cp02.png?raw=true)
