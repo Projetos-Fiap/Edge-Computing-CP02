@@ -34,7 +34,7 @@ Devido ao fato de o Tinkercad (site onde construímos o protótipo) não possuir
 ### Código
 O código para o programa é escrito em C++ e se encontra no arquivo "arduino.c". Utilize o software Arduino IDE para carregar este código para a placa.
 
-### Código utilizando 
+### Código utilizando no CP
 O código utilizado na monstagem em sala do arduino se encontra no arquivo "arduinoHandsOn.c". Neste código utilizamos um DHT11 ao invés do sensor de temperatura e potenciometro usados na simulação do tinkercad.
 
 
